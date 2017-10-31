@@ -1,0 +1,60 @@
+\documentclass[a4paper,12pt]{article}\upshape
+%%\usepackage[MeX]{polski}
+%%\usepackage[cp1250]{inputenc}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+\usepackage{booktabs}
+\usepackage{sidecap}
+\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{subfig}
+
+%opening
+\title{Tour de France 1919}
+\author{Michał Samsel}
+\date{31 października 2017}
+
+\begin{document}
+
+\maketitle
+\begin{abstract}
+\tableofcontents
+\end{abstract}
+	
+	
+	
+\section{Opis}
+13. Tour de France rozpoczął się 29 czerwca, a zakończył 27 lipca 1919 roku w Paryżu. Pierwsze miejsce zajął Firmin Lambot z Belgii. Mapa całej trasy. Patrz:(rysunek nr \ref{fig:mapa}.) Zwycięzcą został ,,Firmin Lambot''
+
+
+
+\section{Etapy}
+	\begin {tabular}{lclcl}
+			\hline
+			etap	&  data & trasa & dystans & Zwycięzca\\
+			\hline
+			1 & 29 czerwca & Paryż-Hawr & 388km & Jean Rossius\\
+			2 & 1 lipca & Hawr-Cherbourg & 364km & Henri Pélissier\\
+			3 & 3 lipca & Cherbourg-Brest & 405km & Francis Pélissier\\
+			4 & 5 lipca & Brest-Les Sables-d’Olonne & 412km & Jean Alavoine\\
+			\hline
+		\end{tabular}
+	\caption{Początkowe etapy 13. Tour de France}
+
+
+
+\section{Mapa}
+	\begin{figure}
+		\begin{center}
+	\includegraphics[scale=0.4]{mapa.png}
+		\end{center}
+	\caption{Mapa 13. Tour de France}
+	\label{fig:mapa}
+	\end{figure}
+
+
+\end{document}

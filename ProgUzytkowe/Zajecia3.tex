@@ -1,0 +1,102 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[MeX]{amsmath, polski}
+\usepackage[utf8]{inputenc}
+
+%opening
+\title{Programy użytkowe ćwiczenia 2}
+\author{Michał Samsel}
+\date{24 października 2017}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\section{Formuły matematyczne w TeXu}
+Pojedyncze znaki dolaru:
+Ułamek w tekście $ \frac{1}{x} $ \\
+Oto równanie $c^{2}=a^{2}+b^{2}$
+
+
+
+Podwojny znaki dolaru:
+Ułamek $$ \frac{1}{x} $$ \\
+Oto równanie $$c^{2}=a^{2}+b^{2}$$
+
+
+
+Struktura equation:
+Ułamek
+\begin{equation}
+\frac{1}{x}
+\label{eq:rownanie1}
+\end{equation}
+Oto równanie
+\begin{equation}
+c^{2}=a^{2}+b^{2}
+\label{eq:rownanie2}
+\end{equation}
+
+
+
+\begin{align}
+\label{eq:partialLW}
+\frac{\partial \mathcal L (w, b, \xi, \alpha, \beta)}{\partial, w} = 0 & \Rightarrow w 
+		- \sum_{i=1}^n\alpha_i y_i x_i=0, \\
+\label{eq:PartialLXi}
+\frac{\partial \mathcal L (w, b, \xi, \alpha, \beta)}{\partial, \xi_i} =0 & \Rightarrow
+		C - \alpha_i-\beta_i=0, \\
+\label{eq:partialLB}
+\frac{\partial \mathcal L (w, b, \xi, \alpha, \beta)}{\partial, b} = 0 & \Rightarrow \
+		sum_{i=1}^n\alpha_i y_i =0.
+\end{align}
+
+
+
+Indeks górny $$x^{y} \ e^{x} \ 2^{e} \ A^{2 \times 2}$$\\
+Indeks dolny $$ x_y \ a_{ij} x_{i}$$
+Oba indeksy $$ x_i^2 \ x_{i^2}^{k_j} \ a_{ij}^k $$
+
+
+
+Pierwiatek, ułamek
+$$ \sqrt{ \frac{2^n}{2_n}} \neq \sqrt[ \frac{1}{3}]{1+n} $$
+
+
+
+\section{Polecenia 2}
+
+$$ \lim_{n \to \infty}
+		\sum_{k=1}^n
+		 \frac{1}{k^2}=
+			\frac{\pi^2}{6} $$
+			
+$$ \Pi_{i=2}^{n=i^2}=
+		\frac{\lim^{n \to 4}(1+\frac{1}{n})^2}{\sum k(\frac {1}{n})} $$
+
+$$ \int_{2}^\infty 
+		\frac{1}{\log_{2}x}dx=
+		 \frac{1}{x}\sin x=1 - \cos^2(x) $$
+		
+$$ \begin{equation}
+		\mathbf{}
+		 \left[ \begin{array}{cccc}
+		a_{11} & a_{12} & \ldots & a_{1k} \\
+		a_{21} & a_{22} & \ldots & a_{2k} \\
+		\vdots & \vdots & \ddots & \vdots \\
+		a_{k1} & a_{k2} & \ldots & a_{kk} \\
+		\end{array} \right]
+	 \end{equation}
+	 \begin{equation}
+		\mathbf{}
+		 \left[ \begin{array}{c}
+		x_{1}  \\
+		x_{2}  \\
+		\vdots \\
+		x_{k}  \\
+	 \end{array} \right]
+$$
+\end{document}
