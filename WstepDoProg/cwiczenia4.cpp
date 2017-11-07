@@ -7,7 +7,7 @@
 
 using namespace std;
 
-void wyswietl(vector<int>liczby)
+void wyswietl(vector<int>liczby) //Wyswietla wszystkie liczby zbioru
 {
 	for (int i = 0; i < liczby.size(); i++)
 	{
@@ -16,7 +16,7 @@ void wyswietl(vector<int>liczby)
 	cout << endl;
 }
 
-int suma(vector<int>liczby)
+int suma(vector<int>liczby) //wyswietla sume liczb w zbiorze
 {
 	int wynik = 0;
 	for (int i = 0; i < liczby.size(); i++)
@@ -26,7 +26,7 @@ int suma(vector<int>liczby)
 	return wynik;
 }
 
-float srednia(vector<int> liczby)
+float srednia(vector<int> liczby) //Wyswietla srednia liczb w zbiorze
 {
 	int wynik = suma(liczby);
 	return (float)wynik / liczby.size();
@@ -35,7 +35,7 @@ float srednia(vector<int> liczby)
 	//return wynik / liczby.size();
 }
 
-int min(vector<int>liczby)
+int min(vector<int>liczby) //Pokazuje najmniejszą wartość w zbiorze
 {
 	int wynik = liczby[0];
 	for (int i = 1; i < liczby.size(); i++)
@@ -48,7 +48,7 @@ int min(vector<int>liczby)
 	return wynik;
 }
 
-int max(vector<int>liczby)
+int max(vector<int>liczby) //Pokazuje najwieksza wartość w zbiorze
 {
 	int wynik = liczby[0];
 	for (int i = 1; i < liczby.size(); i++)
@@ -61,7 +61,7 @@ int max(vector<int>liczby)
 	return wynik;
 }
 
-bool czy_nalezy(vector<int>liczby, int szukana)
+bool czy_nalezy(vector<int>liczby, int szukana) //Sprawdza czy dana liczba znajduej się w zbiorze
 {
 	for (int i = 0; i < liczby.size(); i++)
 	{
@@ -73,7 +73,7 @@ bool czy_nalezy(vector<int>liczby, int szukana)
 	return false;
 }
 
-bool czy_zawiera(vector<int>zbior, vector<int>podzbior)
+bool czy_zawiera(vector<int>zbior, vector<int>podzbior) //Sprawdza czy inny podzbiór znajduje się w zbiorze
 {
 	for (int i = 0; i < podzbior.size(); i++)
 	{
@@ -85,7 +85,7 @@ bool czy_zawiera(vector<int>zbior, vector<int>podzbior)
 	return true;
 }
 
-vector<int> unikalnosc(vector<int>zbior)
+vector<int> unikalnosc(vector<int>zbior) //Tworzy zbiór z innego  zbioru ale bez powtórzeń
 {
 	vector<int>wynik;
 	for (int i = 0; i < zbior.size(); i++)
@@ -118,8 +118,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout <<"Czy liczba 4 występuje w zbiorze: "<< wynik_czy_n << endl;
 	bool wynik_czy_z = czy_zawiera(liczby, podliczby);
 	cout <<"Czy podzbior zawiera się w zbiorze: "<< wynik_czy_z << endl;
-	
-	wyswietl(unikalnosc(liczby));
+	cout <<"Liczby w nowym zbiorze to: "; wyswietl(unikalnosc(liczby));
 	
 
 	system("pause");
