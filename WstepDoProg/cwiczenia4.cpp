@@ -30,7 +30,7 @@ float srednia(vector<int> liczby)
 {
 	int wynik = suma(liczby);
 	return (float)wynik / liczby.size();
-	//Alternatywny sposÛb podany poniøej:
+	//Alternatywny spos√≥b podany poni≈ºej:
 	//float wynik = suma(liczby);
 	//return wynik / liczby.size();
 }
@@ -77,7 +77,7 @@ bool czy_zawiera(vector<int>zbior, vector<int>podzbior)
 {
 	for (int i = 0; i < podzbior.size(); i++)
 	{
-		if (!czy_nalezy(zbior, podzbior[i]))//Robie tylko wtedy gdy czegoú nie ma
+		if (!czy_nalezy(zbior, podzbior[i]))//Robie tylko wtedy gdy czego≈õ nie ma
 		{
 			return false;
 		}
@@ -115,11 +115,12 @@ int _tmain(int argc, _TCHAR* argv[])
 	int wynik_max = max(liczby);
 	cout <<"Najwieksza liczba: "<< wynik_max << endl;
 	bool wynik_czy_n = czy_nalezy(liczby, 4);
-	cout <<"Czy liczba 4 wystÍpuje w zbiorze: "<< wynik_czy_n << endl;
+	cout <<"Czy liczba 4 wystƒôpuje w zbiorze: "<< wynik_czy_n << endl;
 	bool wynik_czy_z = czy_zawiera(liczby, podliczby);
-	cout <<"Czy podzbior zawiera siÍ w zbiorze: "<< wynik_czy_z << endl;
+	cout <<"Czy podzbior zawiera siƒô w zbiorze: "<< wynik_czy_z << endl;
+	
 	wyswietl(unikalnosc(liczby));
-	//cout << "Nowy zbior zawiera liczby:" <<  << endl; 
+	
 
 	system("pause");
 	return 0;
